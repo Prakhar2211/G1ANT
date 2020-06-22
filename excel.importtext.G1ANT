@@ -1,0 +1,9 @@
+addon msoffice version 4.104.0.0
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+excel.open
+excel.importtext path ♥environment⟦USERPROFILE⟧\Desktop\data.csv
+excel.save ♥environment⟦USERPROFILE⟧\Desktop\imported_data.xlsx
+window ✱excel
+delay 6
+excel.close

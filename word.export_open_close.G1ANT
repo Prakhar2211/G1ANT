@@ -1,0 +1,9 @@
+addon msoffice version 4.104.0.0
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+♥sourceFile = ♥environment⟦USERPROFILE⟧\Documents\pb.docx
+♥destinationFile = ♥environment⟦USERPROFILE⟧\Documents\pb1.pdf
+word.open ♥sourceFile
+delay 5
+word.export ♥destinationFile
+word.close

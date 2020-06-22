@@ -1,0 +1,11 @@
+addon msoffice version 4.104.0.0
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+excel.open result ♥excel1
+window ✱excel
+excel.open ♥environment⟦USERPROFILE⟧\Documents\test.xlsx result ♥excel2
+window ✱test✱
+delay 4
+excel.switch id ♥excel1
+delay 3
+excel.close ♥excel1
