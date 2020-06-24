@@ -1,0 +1,8 @@
+addon selenium version 4.104.0.0
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+selenium.open chrome url https://www.google.com/finance
+selenium.gettext search //*[@id="kp-wp-tab-MARKET_SUMMARY"]/div[1]/div/div[1]/div[2]/div/div/div/div/div[1]/g-link/a/div by xpath result ♥quote
+delay 5
+dialog ♥quote
+selenium.close
