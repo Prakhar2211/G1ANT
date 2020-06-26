@@ -1,0 +1,13 @@
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+♥list = apple ❚ mango ❚ melon ❚ kiwi
+-This structure stores multiple countable ordered values within a single variable.
+dialog ‴List elements: ‴♥list
+dialog ‴Total elements: ‴♥list⟦count⟧
+dialog ‴Second element: ‴♥list⟦2⟧
+♥list⟦2⟧ = banana
+dialog ‴List Elements: ‴♥list
+♥list⟦add⟧ = grape
+dialog ♥list
+♥list⟦⟧=cherry
+dialog ♥list

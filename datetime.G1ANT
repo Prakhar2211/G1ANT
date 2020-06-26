@@ -1,0 +1,11 @@
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+-The datetime structure stores information about date and time
+♥myDate = ⟦datetime⟧10/05/2018 12:4:8
+♥myDate = ⟦datetime⟧03:45:0
+-here,only time is specified,the date will be set automatically as the current day
+-Elements of the datetime structure can be accessed using their respective indexes (field names)
+dialog ♥myDate
+dialog ♥myDate⟦hour⟧
+dialog ♥myDate⟦year⟧
+dialog ♥myDate⟦dayofyear⟧

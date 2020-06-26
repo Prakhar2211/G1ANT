@@ -1,0 +1,18 @@
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+
+-A HTML file can be imported using the text.read command. It is imported as text by default, but can then be converted to the html structure to enable various operations on the data
+text.read ♥environment⟦USERPROFILE⟧\Desktop\html.txt result ♥htmlDoc
+♥html = ⟦html⟧♥htmlDoc
+
+dialog ♥html⟦//title⟧
+dialog ♥html⟦//noscript⟧
+dialog ♥html⟦//body⟧
+dialog ♥html⟦//script⟧
+dialog ♥html⟦//script[2]⟧
+-now let's clear whole body of html:
+♥html⟦//body⟧ = cleared
+dialog ♥html⟦//body⟧
+dialog ♥html
+-Please note, that the root of file has to be addressed with a / (slash), so before the HTML path // (double slash) must be added.
+

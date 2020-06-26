@@ -1,0 +1,12 @@
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+-The float structure represents a number with a decimal point separator.
+♥var1 = 8.33
+♥var2 = 1.345
+♥var3 = -3.14159265359
+-When you want the robot to recognize an integer number as a floating point one, you have to force (cast) the float structure
+♥price = ⟦float⟧399
+dialog ♥price
+
+♥price_list = ⟦list:float⟧399.99❚19❚458.59❚199
+dialog ♥price_list

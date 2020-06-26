@@ -1,0 +1,18 @@
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+♥proclist = no1❚no2❚no3
+-This structure stores names of procedures. It can be used not only to directly call a procedure, but also indirectly — with a variable.
+foreach ♥proc in ♥proclist
+  call ♥proc
+end
+procedure no1
+  dialog ‴This is procedure ‴♥proc
+end
+
+procedure no2
+  dialog ‴And this is procedure ‴♥proc
+end
+
+procedure no3
+  dialog ‴And finally, procedure ‴♥proc
+end
