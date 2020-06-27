@@ -1,0 +1,48 @@
+addon selenium version 4.104.0.0
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+dialog.ask ‴Enter Product Code you want to compare its prices : 1-Puma Gamble XT IDP 2-Nike Legend React2 3-Adidas Ultraboost 4-Converse Core Basic 5-Skechers Burst 2.0‴ result ♥input
+if ♥input=="1"
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/f1.txt result ♥f1
+    selenium.open chrome url ♥f1
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/a1.txt result ♥a1
+    selenium.newtab ♥a1
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/m1.txt result ♥m1
+    selenium.newtab ♥m1
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/aj1.txt result ♥aj1
+    selenium.newtab ♥aj1
+else if ♥input=="2"
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/f2.txt result ♥f2
+    selenium.open chrome url ♥f2
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/a2.txt result ♥a2
+    selenium.newtab ♥a2
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/m2.txt result ♥m2
+    selenium.newtab ♥m2
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/aj2.txt result ♥aj2
+    selenium.newtab ♥aj2
+else if ♥input=="3"
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/f3.txt result ♥f3
+    selenium.open chrome url ♥f3
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/m3.txt result ♥m3
+    selenium.newtab ♥m3
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/aj3.txt result ♥aj3
+    selenium.newtab ♥aj3
+else if ♥input=="4"
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/f4.txt result ♥f4
+    selenium.open chrome url ♥f4
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/a4.txt result ♥a4
+    selenium.newtab ♥a4
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/m4.txt result ♥m4
+    selenium.newtab ♥m4
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/aj4.txt result ♥aj4
+    selenium.newtab ♥aj4
+else if ♥input=="5"
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/f5.txt result ♥f5
+    selenium.open chrome url ♥f5
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/a5.txt result ♥a5
+    selenium.newtab ♥a5
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/m5.txt result ♥m5
+    selenium.newtab ♥m5
+    text.read ♥environment⟦USERPROFILE⟧/Desktop/PC/aj5.txt result ♥aj5
+    selenium.newtab ♥aj5
+end

@@ -1,0 +1,12 @@
+addon selenium version 4.104.0.0
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+dialog ‴Welcome to Covid-19 Cases‴
+dialog.ask ‴Enter country you want to know no of cases:‴ result ♥city
+♥city = "Covid-19 cases in "+♥city
+selenium.open chrome url google.com
+delay 5
+selenium.type ♥city search q by name
+keyboard ⋘ENTER⋙
+selenium.gettext search m7B03 by class result ♥cases
+dialog ‴No of cases in ♥city are - ‴♥cases

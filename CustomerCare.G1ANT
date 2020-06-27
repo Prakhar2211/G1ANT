@@ -1,0 +1,15 @@
+addon msoffice version 4.104.0.0
+addon core version 4.107.0.0
+addon language version 4.106.1.0
+♥outlookInboxFolder = abc@outlook.com\Inbox
+outlook.open display false
+outlook.getfolder ♥outlookInboxFolder result ♥inboxFolder
+♥mails = ♥inboxFolder⟦unread⟧
+foreach ♥mail in ♥mails
+    outlook.reply ♥mail result ♥replyMail
+    ♥replyMailBody = ♥replyMail⟦body⟧
+    ♥replyText = ⊂"Hi,\r\nThanks for your email.Your request has been duely noted.We will contact you shortly.\r\nRegards,\r\nXYZ\r\nCustomer Care Executive\r\n"⊃
+    ♥replyMail⟦body⟧ = ♥replyText + ♥replyMailBody
+    outlook.send mail ♥replyMail
+end
+outlook.close
